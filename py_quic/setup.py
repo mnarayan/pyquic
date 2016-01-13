@@ -10,7 +10,7 @@ if sys.platform == 'darwin':
         name="py_quic",
         sources=["QUIC.C", "py_quic.pyx"],
         include_dirs = [numpy.get_include()],
-        extra_compile_args=['-faltivec', '-I/System/Library/Frameworks/vecLib.framework/Headers'],
+        extra_compile_args=['-arch x86_64', '-I/System/Library/Frameworks/vecLib.framework/Headers'],
         extra_link_args=["-Wl,-framework", "-Wl,Accelerate"],
         language="c++"
         )]
