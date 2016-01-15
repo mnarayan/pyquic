@@ -9,6 +9,8 @@ The wrapper was  successfully tested on OSX (10.6), Ubuntu (11.04) and Arch Linu
 The modifications to the original C++ source (from the above website) are minimal:
 See the diff for the second overall commit.
 
+Update: This also works on OSX 10.9 now.
+
 Requirements
 ------------
 

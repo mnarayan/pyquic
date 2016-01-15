@@ -27,8 +27,7 @@ newS = np.zeros(S.shape)
 newS[:] = S
 
 # Run in "default" mode
-X, W, opt, cputime, iters, dGap = py_quic.quic(S=newS, L=0.5,\
-        max_iter=100, msg=2)
+X, W, opt, cputime, iters, dGap = py_quic.quic(S=newS, L=0.5,max_iter=100, msg=2)
 test = 923.1042
 assert_allclose(opt, test)
 
